@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: white;
+}
+header {
+    background: black;
+    width: 100%;
+    position: fixed;
+}
+.inner { 
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    padding: 0 20px;
+    font-size: 24px;
+    font-weight: 900;
+}
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+.inner > ul {
+    display: flex;
+    margin: auto;
+}
+.inner > ul > li {
+    padding: 0px 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    list-style: none;
+    /* position: relative; */
+}
+.inner ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.drop_menu {
+    position: absolute;
+    left: 34%;
+    display: none;
+}
+.inner li:hover > .drop_menu {
+    display: block;
+}
+.inner .drop_menu > li {
+    font-size: 18px;
+    padding: 4px 8px;
+    background: #242526;
+    list-style: none;
+}
+.inner .drop_menu > li:hover {
+    background: black;
+}
+.mega_box { 
+    position: absolute;
+    top: 70px;
+    background: #242526;
+    width: 100%;
+    left: 0;
+    display: none;
+}
+.inner li:hover .mega_box {
+    display: block;
+}
+.mega_box .container {
+    padding: 0 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.mega_drop {
+    /* padding: 0 100px; */
+    /* line-height: 75px; */
+    font-size: 18px;
+}
+.mega_drop li {
+    text-align: center;
+    list-style:none;
+}
+.mega_drop li:hover {
+    background: black;
+}
+.mega_drop h4 {
+    color: #fff;
+    cursor: pointer;
+}
+
